@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansBold.ttf);
+}
+@font-face {
+    font-family: NeueMachina;
+    src: url(../../assets/fonts/NeueMachinaRegular.otf);
+}
+
+body{
+    background-image: url("../../assets/images/glacierImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);  
+   
+}
+#transparent_black_box{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 90vh;
+    background-color: rgba(0,0,0, 0.8); 
+    border-radius: 5vw;
+      
+}
+
+#input_city{
+    font-size: 2vw;
+    width: 50vw;
+    margin-top: 10px;
+    
+    padding: 20px;
+    border: none;
+    border-bottom: 0.250vw solid white;
+    outline: none;
+    background-color: transparent;  
+}
+
+input{
+    position: absolute;
+    top: 2%;
+    left: 18%;
+    color: white;
+    font-weight: 700;
+}
+#input_city::placeholder{
+    color: white;
+    font-family: NeueMachina;
+    font-size: 2vw;
+    font-weight:bold;
+} 
+#search_icon{
+    cursor: pointer;
+    position: absolute;
+    top: 7%;
+    right:21%;
+    color: white;
+    font-size: 1.50vw;
+}
+
+
+#location_icon{
+    position: absolute;
+    top: 23%;
+    left:17%;
+    color: red;
+    font-size: 3.50vw;
+    
+
+}
+#loc_name{
+    font-size: 4vw;
+    font-family: ProductSans;
+    position: absolute;
+    top: 20%;
+    left:23%;
+    color: white;
+    
+}
+
+
+.fs_color{
+    color: white;
+    font-size: 3vw;
+    font-family: ProductSans;
+}
+#degree_celcius{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    position: absolute;
+    top: 38%;
+    left:18%;
+
+}
+#humidity_wind{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 5vw;
+    width: 50vw;
+    position: absolute;
+    top: 60%;
+    left:18%;
+    
+}
+
+.humidity_wind_speed_collapse{
+    font-family:ProductSans;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vw;
+    font-size: 3vw;
+    color: antiquewhite;
+    background-color:rgba(255, 255, 255, 0.20);
+    width: 30vw;
+    height: 30vh;
+    border-radius: 3vw;
+}
+
+

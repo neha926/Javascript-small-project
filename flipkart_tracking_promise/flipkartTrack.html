@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlipkartTrack</title>
+    <link rel="stylesheet" href="flipkartTrack.css" />
+    <script src="flipkartTrack.js" defer></script>
+  </head>
+  <body>
+    <button id="track_btn">Track Your Order</button>
+
+    <div id="handle_containers">
+        
+      <div id="progress_container">
+        <div id="progress_filler"></div>
+        <div class="dot" style="top: 0%" id="d1"></div>
+        <div class="dot" style="top: 33%" id="d2"></div>
+        <div class="dot" style="top: 66%" id="d3"></div>
+        <div class="dot" style="top: 100%" id="d4"></div>
+      </div>
+
+      <div id="status_head_container">
+        <h2 class="status_head">
+          Order Confirmed : <span class="tracking_statuses"></span>
+        </h2>
+        <h2 class="status_head">
+          Shipped : <span class="tracking_statuses"></span>
+        </h2>
+        <h2 class="status_head">
+          Out For Delivery : <span class="tracking_statuses"></span>
+        </h2>
+        <h2 class="status_head">
+          Delivered : <span class="tracking_statuses"></span>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
