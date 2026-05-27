@@ -15,7 +15,7 @@ clicky.addEventListener("click",async () => {
   console.dir(weatherReport)
   
   
-  document.getElementById("loc_name").textContent=weatherReport.name;;
+  document.getElementById("loc_name").textContent=weatherReport.name;
   document.getElementById("weather_desc").textContent=weatherReport.weather[0].description;
   document.getElementById("humidity_val").textContent=`${weatherReport.main.humidity}%`;
   document.getElementById("wind_speed_val").textContent=`${weatherReport.wind.speed}m/s`;
